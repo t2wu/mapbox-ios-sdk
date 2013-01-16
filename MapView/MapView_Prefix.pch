@@ -3,6 +3,7 @@
 //
 
 #if __OBJC__
+    #import "sqlite3.h"
     #import <Foundation/Foundation.h>
     #import <UIKit/UIKit.h>
     #import <CoreLocation/CoreLocation.h>
