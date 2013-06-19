@@ -3,11 +3,14 @@ MapBox iOS SDK
 
 Based on the Route-Me iOS map library (Alpstein fork) with [MapBox][mapbox] customizations. 
 
-Requires iOS 5 and Xcode 4.3 or greater. Does not yet support ARC. 
+Requires iOS 5, Xcode 4.3 or greater, and ARC. 
+
+[![](https://raw.github.com/mapbox/mapbox-ios-sdk/packaging/screenshot.png)]()
 
 Major differences from [Alpstein fork of Route-Me](https://github.com/Alpstein/route-me): 
 
  * Requires iOS 5.0 and above. 
+ * Supports Automatic Reference Counting (ARC). 
  * [MapBox](http://mapbox.com) & [MBTiles](http://mbtiles.org) tile source integration code. 
  * [MapBox Markers](http://mapbox.com/blog/markers/) support. 
  * [UTFGrid interactivity](http://mapbox.com/mbtiles-spec/utfgrid/). 
@@ -47,7 +50,7 @@ Installation
 There are three ways that you can install the SDK, depending upon your needs: 
 
  1. Clone from GitHub and integrate as a dependent Xcode project. 
- 1. Use the [binary framework](https://github.com/mapbox/mapbox-ios-sdk/tree/packaging/Downloads). Use like regular frameworks, linking it in your project, adding `#import <MapBox/MapBox.h>`, and additionally, including the `-ObjC` linker flag. 
+ 1. Use the [binary framework](http://mapbox-ios-sdk.s3.amazonaws.com/index.html). Use like regular frameworks, linking it in your project, adding `#import <MapBox/MapBox.h>`, and additionally, including the `-ObjC` linker flag. 
  1. Install via [CocoaPods](http://cocoapods.org). 
 
 More detailed information on the installation options is available in the [SDK guide](http://mapbox.com/mapbox-ios-sdk/). 
@@ -58,7 +61,7 @@ Then, update the submodules:
 
       git submodule update --init
 
-Some example apps showing usage of the SDK:
+Some example apps showing usage of the SDK (with screenshots):
 
  * [MapBox iOS Example](https://github.com/mapbox/mapbox-ios-example) - online, offline, and interactive tile sources
  * [MapBox Me](https://github.com/mapbox/mapbox-me) - user location services and terrain toggling
@@ -70,26 +73,20 @@ More documentation is available:
 
 There are two subdirectories - MapView and Proj4. Proj4 is a support library used to do map projections. The MapView project contains only the Route-Me map library. 
 
-See License.txt for license details. In any app that uses this SDK, include the following text on your "preferences" or "about" screen: "Uses MapBox iOS SDK, (c) 2008-2012 MapBox and Route-Me Contributors". Your data provider will have additional attribution requirements.
+See License.txt for license details. In any app that uses this SDK, include the following text on your "preferences" or "about" screen: "Uses MapBox iOS SDK, (c) 2008-2013 MapBox and Route-Me Contributors". Your data provider will have additional attribution requirements.
 
 News, Support and Contributing
 ------------------------------
 
-Complete API documentation is available [online][api] or as an [Xcode docset Atom feed][docset]. 
+Complete API documentation is available [online](http://mapbox.com/mapbox-ios-sdk/api/) or as an [Xcode docset Atom feed](http://mapbox.com/mapbox-ios-sdk/Docs/publish/docset.atom). 
 
-The MapBox iOS SDK has a [support resource][support] where you can open cases and browse other developers' discussions about use of the SDK. 
+The MapBox iOS SDK has a [support resource](http://support.mapbox.com/discussions/mapbox-ios-sdk) where you can open cases and browse other developers' discussions about use of the SDK. 
 
-We have a [basic technical overview][docs] along with the installation instructions. 
+We have a [basic technical overview](http://mapbox.com/mapbox-ios-sdk/) along with the installation instructions. 
 
 MapBox has an IRC channel on `irc.freenode.net` in `#mapbox`. 
 
-To report bugs and help fix them, please use the [issue tracker][tracker]. 
-
-[api]: http://mapbox.com/mapbox-ios-sdk/api/
-[docset]: http://mapbox.com/mapbox-ios-sdk/Docs/publish/docset.atom
-[support]: http://support.mapbox.com/discussions/mapbox-ios-sdk
-[docs]: http://mapbox.com/mapbox-ios-sdk/
-[tracker]: https://github.com/mapbox/mapbox-ios-sdk/issues
+To report bugs and help fix them, please use the [issue tracker](https://github.com/mapbox/mapbox-ios-sdk/issues). 
 
 Dependent Libraries
 -------------------
